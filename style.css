@@ -52,3 +52,45 @@ header nav a {
   font-family: "Raleway", sans-serif;
   opacity: 0.8;
 }
+
+/* Intro */
+
+.intro-container {
+  background-color: #1C2431;
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height:155vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+}
+
+.intro img {
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+.intro p {
+  font-size: 1.3rem;
+  margin: 30px;
+  opacity: 0.8;
+}
+
+.get-started {
+  width: 290px;
+  height: 58px;
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: #65E2D9;
+  background-image: linear-gradient(to right, #65E2D9, #339ECC);
+  color: #fff;
+}
