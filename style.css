@@ -128,3 +128,48 @@ header nav a {
   max-width: 370px;
   opacity: 0.8;
 }
+
+/* Half image half text section */
+
+.half-image-half-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+}
+
+.half-image {
+  flex-basis: 50%;
+}
+
+.half-image img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.half-text {
+  flex-basis: 40%;
+}
+
+.half-text h1 {
+  max-width: 400px;
+  line-height: 1.3;
+  padding-bottom: 20px;
+}
+
+.half-text p {
+  max-width: 550px;
+  opacity: 0.8;
+}
+
+.half-text a {
+  color: #65E2D9;
+  border-bottom: 1px solid #65E2D9;
+  padding-bottom: 4px;
+  opacity: 0.8;
+}
+
+.half-text a img {
+  vertical-align: middle;
+  padding: 0 0 2px 5px;
+}
