@@ -94,3 +94,37 @@ header nav a {
   background-image: linear-gradient(to right, #65E2D9, #339ECC);
   color: #fff;
 }
+
+/* Features */
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.feature-grid .feature-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+  width: 100%;
+  flex-basis: 40%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-grid .feature-tile img {
+  margin: 1.5rem 0;
+}
+
+.feature-grid .feature-tile p {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+  max-width: 370px;
+  opacity: 0.8;
+}
