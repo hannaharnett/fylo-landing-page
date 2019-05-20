@@ -259,6 +259,12 @@ header nav {
   background-color: #fff;
 }
 
+.act-input input::placeholder {
+  color: silver;
+  font-size: 12px;
+  padding-left: 30px;
+}
+
 /* Button */
 .for-free {
   width: 210px;
