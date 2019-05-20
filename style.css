@@ -36,6 +36,10 @@ p, a, nav, .col {
   opacity: 0.9;
 }
 
+input, button {
+  outline: none;
+}
+
 /* Header */
 
 header {
@@ -50,6 +54,11 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+header nav a:hover {
+  transform: scale(1.1);
 }
 
 /* Intro */
@@ -90,6 +99,12 @@ header nav {
   background-color: #65E2D9;
   background-image: linear-gradient(to right, #65E2D9, #339ECC);
   color: #fff;
+  transition: .1s ease-in-out;
+}
+
+.get-started:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* Features */
@@ -159,6 +174,11 @@ header nav {
   color: #65E2D9;
   border-bottom: 1px solid #65E2D9;
   padding-bottom: 4px;
+}
+
+.half-text a:hover img {
+  position: relative;
+  left: 5px;
 }
 
 .half-text a img {
@@ -257,12 +277,12 @@ header nav {
   border-radius: 30px;
   font-size: 1rem;
   background-color: #fff;
+  padding-left: 30px;
 }
 
 .act-input input::placeholder {
   color: silver;
   font-size: 12px;
-  padding-left: 30px;
 }
 
 /* Button */
@@ -327,6 +347,10 @@ footer {
   justify-self: center;
 }
 
+.col-3 a:hover, .col-4 a:hover {
+  opacity: 0.7;
+}
+
 .col-3 {
   grid-area: nav1;
 }
@@ -344,6 +368,10 @@ footer {
   margin: 5px 5px;
 }
 
+.col-5 i:hover {
+  transform: scale(1.1);
+}
+
 .col-5 i {
   width: 30px;
   height: 30px;
@@ -352,6 +380,7 @@ footer {
   text-align: center;
   vertical-align: middle;
   padding: 6px;
+  transition: 0.1s ease-in-out;
 }
 
 
