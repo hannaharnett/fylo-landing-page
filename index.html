@@ -16,7 +16,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; background-color: #0B1523; opacity: 1;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: #9BABD9; }
   </style>
 </head>
 <body>
@@ -43,28 +43,28 @@
   <section class="feature-grid">
     <div class="feature-tile">
       <img src="./images/icon-access-anywhere.svg" alt="">
-      <h3>Access your files, anywhere</h3>
+      <h2>Access your files, anywhere</h2>
       <p>The ability to use a smartphone, tablet, or computer to access your account means your
       files follow you everywhere.</p>
     </div>
 
     <div class="feature-tile">
       <img src="./images/icon-security.svg" alt="">
-      <h3>Security you can trust</h3>
+      <h2>Security you can trust</h2>
       <p>2-factor authentication and user-controlled encryption are just a couple of the security
       features we allow to help secure your files.</p>
     </div>
 
     <div class="feature-tile">
       <img src="./images/icon-collaboration.svg" alt="">
-      <h3>Real-time collaboration</h3>
+      <h2>Real-time collaboration</h2>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration.
       No email attachments required.</p>
     </div>
 
     <div class="feature-tile">
       <img src="./images/icon-any-file.svg" alt="">
-      <h3>Store any type of file</h3>
+      <h2>Store any type of file</h2>
       <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
       file types to be securely stored and shared.</p>
     </div>
@@ -75,7 +75,7 @@
       <img src="./images/illustration-stay-productive.png" alt="">
     </div>
     <div class="half-text">
-      <h1>Stay productive, wherever you are</h1>
+      <h2>Stay productive, wherever you are</h2>
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
       storage needs.</p>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
@@ -86,45 +86,45 @@
 
   <section class="testimonials">
     <div class="testimonial-tile testimonial-first">
-      <div class="testimonial-quote">
+      <blockquote cite="" class="testimonial-quote">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
         become a well-oiled collaboration machine.</p>
-      </div>
-      <div class="testimonial-profile">
-        <img src="./images/profile-1.jpg" alt="">
-        <div class="author">
-          <h4>Satish Patel</h4>
-          <p>Founder & CEO, Huddle</p>
-        </div>
-      </div>
+         <footer class="testimonial-profile">
+          <img src="./images/profile-1.jpg" alt="">
+          <div class="author">
+            <p class="testimonial-name">Satish Patel</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+         </footer>
+      </blockquote>
     </div>
 
     <div class="testimonial-tile">
-      <div class="testimonial-quote">
+      <blockquote cite="" class="testimonial-quote">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-        become a well-oiled collaboration machine.</p>
-      </div>
-      <div class="testimonial-profile">
-        <img src="./images/profile-2.jpg" alt="">
-        <div class="author">
-          <h4>Bruce McKenzie</h4>
-          <p>Founder & CEO, Huddle</p>
-        </div>
-      </div>
+          become a well-oiled collaboration machine.</p>
+         <footer class="testimonial-profile">
+          <img src="./images/profile-2.jpg" alt="">
+          <div class="author">
+            <p class="testimonial-name">Bruce McKenzie</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+         </footer>
+      </blockquote>
     </div>
 
     <div class="testimonial-tile">
-      <div class="testimonial-quote">
+      <blockquote cite="" class="testimonial-quote">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
         become a well-oiled collaboration machine.</p>
-      </div>
-      <div class="testimonial-profile">
-        <img src="./images/profile-3.jpg" alt="">
-        <div class="author">
-          <h4>Iva Boyd</h4>
-          <p>Founder & CEO, Huddle</p>
-        </div>
-      </div>
+        <footer class="testimonial-profile">
+          <img src="./images/profile-3.jpg" alt="">
+          <div class="author">
+            <p class="testimonial-name">Iva Boyd</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
+        </footer>
+      </blockquote>
     </div>
   </section>
 
@@ -135,12 +135,12 @@
       questions, our support team would be happy to help you.</p>
     </div>
     <div class="act-input">
-      <input type="email" name="" value="" placeholder="email@example.com">
+      <input aria-label="Email" type="email" name="" value="" placeholder="email@example.com">
       <button class="get-started for-free" type="button" name="button">Get Started For Free</button>
     </div>
   </section>
 
-  <footer>
+  <footer class="page-footer">
     <div class="footer-container">
       <div class="footer-logo">
         <img src="./images/logo.svg" alt="">
@@ -172,9 +172,9 @@
       </div>
 
       <div class="col col-5">
-        <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+        <a aria-label="facebook" class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a aria-label="twitter" class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+        <a aria-label="instagram" class="social-link" href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
@@ -183,5 +183,16 @@
     Coded by <a href="https://github.com/hannaharnett" target="_blank" rel="noopener noreferrer">Hannah Arnett</a>.
   </p>
 
+   <!-- Allows outline styles when tabbing through site -->
+  <script>
+    function handleFirstTab(e) {
+      if (e.key === "Tab") {
+          document.body.classList.add('user-is-tabbing');
+          window.removeEventListener('keydown', handleFirstTab);
+      }
+    }
+
+    window.addEventListener('keydown', handleFirstTab);
+  </script>
 </body>
 </html>

@@ -12,6 +12,12 @@ body {
   color: #fff;
 }
 
+/* For keyboard users */
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) button:focus {
+  outline: none;
+}
+
 h1, h2, h3, h4, nav {
   font-family: "Raleway", sans-serif;
 }
@@ -34,10 +40,6 @@ a {
 
 p, a, nav, .col {
   opacity: 0.9;
-}
-
-input, button {
-  outline: none;
 }
 
 /* Header */
@@ -200,7 +202,7 @@ header nav a:hover {
 .testimonial-first:after {
   content: url("./images/bg-quotes.png");
   position: relative;
-  bottom: 205px;
+  bottom: 255px;
   right: 10px;
   z-index: -1;
 }
@@ -216,14 +218,14 @@ header nav a:hover {
 }
 
 .testimonial-quote {
-  padding: 40px 30px 0 30px;
+  padding: 40px 30px 40px 30px;
   font-size: 0.9rem;
 }
 
 .testimonial-profile {
   display: flex;
-  height: 30px;
-  padding-left: 30px;
+  height: 2.5rem;
+  padding-bottom: 0;
 }
 
 .testimonial-profile img {
@@ -234,7 +236,12 @@ header nav a:hover {
 
 .author {
   font-size: 0.7rem;
-  padding-left: 10px;
+  padding-left: 12px;
+}
+
+.testimonial-name {
+  font-weight: 900;
+  padding-bottom: 0;
 }
 
 /* Call to action section */
@@ -293,7 +300,7 @@ header nav a:hover {
 
 /* Footer */
 
-footer {
+.page-footer {
   background-color: #0B1523;
   display: grid;
   grid-template-columns: 7vw 1fr 7vw;
@@ -535,7 +542,7 @@ footer {
   }
 
   .testimonial-first:after {
-    bottom: 170px;
+    bottom: 225px;
   }
 
   .testimonial-tile {
